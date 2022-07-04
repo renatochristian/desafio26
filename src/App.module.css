@@ -37,12 +37,11 @@
 
 .sectionOne {
 	display: flex;
-	/* width: 100%; */
 	margin-top: 5rem;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	//gap: 10%;
+	gap:4%;
 }
 
 @media only screen and (max-width: 575px) {
@@ -52,13 +51,13 @@
 }
 
 .sectionDescubra {
-	width: 57%;
+	width: 65%;
 }
 .sizeRightImage {
 	width: 35%;
 }
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 767px) {
 	.sectionDescubra {
 		width: 100%;
 	}
@@ -66,6 +65,7 @@
 		display: none;
 	}
 }
+
 .sectionDescubra h1 {
 	font-weight: 600;
 	font-size: 3rem;
@@ -84,7 +84,18 @@
 	margin-top: 2rem;
 }
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 1199px) {
+	.sectionDescubra h1 {
+		font-size: 2rem;
+	}
+
+	.sectionDescubra p {
+		font-size: 1.25rem;
+		line-height: 140%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
 	.sectionDescubra h1 {
 		font-size: 1.5rem;
 	}
@@ -99,18 +110,14 @@
 		line-height: 1.6;
 	}
 }
-.gap {
-	width: 8%;
-}
+
 .sectionOne img {
 	width: 100%;
 	border-radius: 4px;
 }
 
-@media only screen and (max-width: 575px) {
-	.gap {
-		width: 0%;
-	}
+@media only screen and (max-width: 767px) {
+	
 	.sectionOne img {
 		display: none;
 	}
@@ -139,12 +146,11 @@
 	padding-top: 0.5rem;
 }
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 767px) {
 	.statsLine {
 		margin-top: 2.5rem;
 		justify-content: space-between;
 	}
-
 	.statsLine strong {
 		font-size: 1.5rem;
 	}
@@ -160,15 +166,16 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	//gap: 10%;
+	gap:4%;
 }
 
 .sectionConfira .gallery {
-	width: 57%;
+	width: 65%;
 	object-fit: cover;
 	overflow: hidden;
 	display: flex;
 	justify-content: space-between;
+	gap: 16px;
 }
 
 .sectionConfira .gallery img {
@@ -202,7 +209,7 @@
 	}
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
 	.sectionConfira .gallery img {
 		max-width: 200px;
 		max-height: 194px;
@@ -223,13 +230,19 @@
 	margin-top: 2.25rem;
 }
 
+@media only screen and (max-width: 1200px) {
+	.text strong {
+		font-size: 2rem;
+		line-height: 1;
+	}
+}
+
 @media only screen and (max-width: 767px) {
 	.sectionConfira .text {
 		padding-top: 2.5rem;
 		width: 100%;
 	}
 	.text strong {
-		font-weight: 500;
 		font-size: 1.25rem;
 		line-height: 1.5;
 	}
@@ -265,7 +278,6 @@
 	}
 
 	.sectionTitle strong {
-		font-weight: 500;
 		font-size: 1.5rem;
 		line-height: 1.75;
 	}

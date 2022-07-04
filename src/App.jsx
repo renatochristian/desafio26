@@ -14,7 +14,7 @@ export function App() {
 			<div className={styles.sectionOne}>
 				<div className={styles.sectionDescubra}>
 					<h1>
-						Descubra novos artistas <br /> e suas obras
+						Descubra novos artistas <br></br> e suas obras
 					</h1>
 					<p>Uma nova geração de jovens artistas surgem</p>
 
