@@ -1,0 +1,280 @@
+.wrapper {
+	width: 100%;
+	margin: auto;
+	padding: 0 1.5rem;
+}
+
+@media only screen and (min-width: 576px) {
+	.wrapper {
+		width: 540px;
+		margin: auto;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.wrapper {
+		width: 720px;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.wrapper {
+		width: 960px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.wrapper {
+		width: 1140px;
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+	.wrapper {
+		width: 1320px;
+	}
+}
+
+.sectionOne {
+	display: flex;
+	/* width: 100%; */
+	margin-top: 5rem;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	//gap: 10%;
+}
+
+@media only screen and (max-width: 575px) {
+	.sectionOne {
+		margin-top: 0;
+	}
+}
+
+.sectionDescubra {
+	width: 57%;
+}
+.sizeRightImage {
+	width: 35%;
+}
+
+@media only screen and (max-width: 575px) {
+	.sectionDescubra {
+		width: 100%;
+	}
+	.sizeRightImage {
+		display: none;
+	}
+}
+.sectionDescubra h1 {
+	font-weight: 600;
+	font-size: 3rem;
+	line-height: 140%;
+}
+
+.sectionDescubra p {
+	padding-top: 1rem;
+	color: var(--gray-500);
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 140%;
+}
+
+.sectionDescubra button {
+	margin-top: 2rem;
+}
+
+@media only screen and (max-width: 575px) {
+	.sectionDescubra h1 {
+		font-size: 1.5rem;
+	}
+	.sectionDescubra p {
+		font-size: 0.875rem;
+	}
+
+	.sectionDescubra button {
+		width: 100%;
+		font-size: 0.75rem;
+		padding: 0.5rem;
+		line-height: 1.6;
+	}
+}
+.gap {
+	width: 8%;
+}
+.sectionOne img {
+	width: 100%;
+	border-radius: 4px;
+}
+
+@media only screen and (max-width: 575px) {
+	.gap {
+		width: 0%;
+	}
+	.sectionOne img {
+		display: none;
+	}
+}
+
+.statsLine {
+	margin-top: 4rem;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: flex-start;
+	text-align: center;
+	gap: 2rem;
+}
+
+.statsLine strong {
+	color: var(--gray-900);
+	font-size: 2rem;
+}
+
+.statsLine p {
+	color: var(--gray-500);
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 133%;
+	padding-top: 0.5rem;
+}
+
+@media only screen and (max-width: 575px) {
+	.statsLine {
+		margin-top: 2.5rem;
+		justify-content: space-between;
+	}
+
+	.statsLine strong {
+		font-size: 1.5rem;
+	}
+
+	.statsLine p {
+		font-size: 0.875rem;
+	}
+}
+
+.sectionConfira {
+	margin-top: 5rem;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	//gap: 10%;
+}
+
+.sectionConfira .gallery {
+	width: 57%;
+	object-fit: cover;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+}
+
+.sectionConfira .gallery img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+	.sectionConfira {
+		margin-top: 2.5rem;
+		flex-direction: column;
+	}
+	.sectionConfira .gallery {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.sectionConfira .gallery img {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		overflow: hidden;
+		max-height: 200px;
+	}
+
+	.sectionConfira .gallery img + img {
+		margin-top: 20px;
+	}
+}
+
+@media only screen and (min-width: 767px) {
+	.sectionConfira .gallery img {
+		max-width: 200px;
+		max-height: 194px;
+	}
+}
+
+.sectionConfira .text {
+	width: 35%;
+	display: flex;
+	flex-direction: column;
+}
+
+.text strong {
+	font-size: 2.5rem;
+	line-height: 2.5rem;
+}
+.text button {
+	margin-top: 2.25rem;
+}
+
+@media only screen and (max-width: 767px) {
+	.sectionConfira .text {
+		padding-top: 2.5rem;
+		width: 100%;
+	}
+	.text strong {
+		font-weight: 500;
+		font-size: 1.25rem;
+		line-height: 1.5;
+	}
+	.text button {
+		width: 100%;
+		margin-top: 1rem;
+		font-size: 0.75rem;
+		padding: 0.5rem;
+		line-height: 1.6;
+	}
+}
+
+.sectionArtistas {
+	padding-top: 5rem;
+}
+
+.sectionArtistas .imageList {
+	padding-top: 2.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.sectionTitle strong {
+	font-size: 2.5rem;
+	line-height: 3rem;
+}
+
+@media only screen and (max-width: 767px) {
+	.sectionArtistas {
+		padding-top: 3rem;
+	}
+
+	.sectionTitle strong {
+		font-weight: 500;
+		font-size: 1.5rem;
+		line-height: 1.75;
+	}
+
+	.sectionArtistas .imageList {
+		padding-top: 2.5rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 20px;
+	}
+}

@@ -1,0 +1,26 @@
+.button {
+	font-family: "Nunito", sans-serif;
+	padding: 0.5rem 3rem;
+	font-size: 0.875rem;
+	text-align: center;
+	color: var(--gray-100);
+	background: var(--buttonBlue);
+	border-radius: 4px;
+	cursor: pointer;
+	margin: 0;
+	border: 0;
+	line-height: 1.5;
+	width: fit-content;
+}
+
+@media only screen and (max-width: 575px) {
+	.button {
+		padding: 0.25rem 2rem;
+		font-size: 0.675rem;
+		line-height: 0.875;
+	}
+}
+
+.button:hover {
+	opacity: 0.9;
+}

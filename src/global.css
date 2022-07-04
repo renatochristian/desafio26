@@ -1,0 +1,21 @@
+:root {
+	--white: #ffffff;
+	--gray-100: #f9f9f9;
+	--gray-300: #ebebeb;
+	--gray-500: #737373;
+	--gray-900: #0c0c0c;
+	--buttonBlue: #3772ff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--gray-100);
+	font-family: "Inter", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	padding: 0 0;
+}

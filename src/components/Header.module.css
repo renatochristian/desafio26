@@ -1,0 +1,47 @@
+.header {
+	color: var(--gray-900);
+	display: flex;
+	padding: 2.5rem 0 0 0;
+	gap: 3rem;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.header strong {
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.header input {
+	color: var(--gray-900);
+	border: 0;
+	background: var(--gray-300);
+	border-color: var(--gray-300);
+	border-radius: 5px;
+	padding: 0.5rem 1.5rem;
+	width: 50%;
+}
+
+@media only screen and (max-width: 575px) {
+	.header{
+		padding: 1.5rem 0rem;
+	}
+
+	.header strong{
+		font-size:1.5rem;
+	}
+	.header input {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+	.header input {
+		width: 70%;
+	}
+}
+
+.header input:focus {
+	transition: outline 0.1s ease;
+	outline: 1px solid var(--gray-500);
+}
